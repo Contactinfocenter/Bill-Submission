@@ -1,0 +1,52 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    display: none; /* Initially hidden */
+    z-index: 9999; /* Set a high z-index to make sure it's above other content */
+}
+
+/* Style the date input */
+input[type="date"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the month input */
+#month {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the "Add Bill" and "Remove Last Bill" buttons */
+.btn-success,
+.btn-danger {
+    margin-right: 10px;
+}
+
+/* Change the focus border color of input fields to blue */
+input[type="text"]:focus,
+input[type="date"]:focus,
+select:focus,
+textarea:focus {
+    border-color: blue !important;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25) !important;
+}
+
+/* Change the active border color of input fields to green */
+input[type="text"]:active,
+input[type="date"]:active,
+select:active,
+textarea:active {
+    border-color: green !important;
+    /* You can also add other styles like box-shadow if desired */
+}
+
+
