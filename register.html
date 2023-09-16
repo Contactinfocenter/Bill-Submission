@@ -37,6 +37,9 @@
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
     max-width: 800px !important;
     margin: 0 auto; /* Center the container horizontally */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     }
     /* Custom CSS for a black outline button */
     .btn-outline-black {
@@ -67,22 +70,39 @@
     .custom-control-input:focus ~ .custom-control-label::before {
         box-shadow: none; /* Black focus outline */
     }
+    .left-column {
+    flex: 1; /* Take up 50% of the container width */
+    padding: 20px;
+}
+
+.right-column {
+    flex: 1; /* Take up 50% of the container width */
+    padding: 20px;
+    background-color: #f2f2f2; /* Optional background color for the right column */
+}
   </style>
 </head>
 <body>
   
     <div class="login-container">
-        <h5 class="mb-3 text-center">Sign Up</h5><hr>
-        <!-- Add an id attribute to your form -->
-        <form id="registrationForm">
-            <input type="text" placeholder="Fullname" id="nameInp" class="form-control mb-3">
-            <input type="text" placeholder="Email" id="emailInp" class="form-control mb-3">
-            <input type="text" placeholder="Username" id="userInp" class="form-control mb-3">
-            <input type="password" placeholder="Password" id="passInp" class="form-control mb-3">
-            <button type="submit" id="sub_btn" class="btn btn-outline-black mb-3 w-100">Sign up</button>
-        </form>
-        <a href="login.html" class="badge badge-secondary py-1 w-100">Already Have An Account?</a>
+        <div class="left-column">
+            <img src="./assets/img/registration.png" alt="Image" class="img-fluid" />
+        </div>
+        <div class="right-column">
+            <h5 class="mb-3 text-center">Sign Up</h5>
+            <hr>
+            <!-- Add an id attribute to your form -->
+            <form id="registrationForm">
+                <input type="text" placeholder="Fullname" id="nameInp" class="form-control mb-3">
+                <input type="text" placeholder="Email" id="emailInp" class="form-control mb-3">
+                <input type="text" placeholder="Username" id="userInp" class="form-control mb-3">
+                <input type="password" placeholder="Password" id="passInp" class="form-control mb-3">
+                <button type="submit" id="sub_btn" class="btn btn-outline-black mb-3 w-100">Sign up</button>
+            </form>
+            <a href="login.html" class="badge badge-secondary py-1 w-100">Already Have An Account?</a>
+        </div>
     </div>
+    
 
 <script type="module" src="assets/js/register.js"></script>
 

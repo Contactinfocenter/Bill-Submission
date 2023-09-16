@@ -70,10 +70,26 @@
     .custom-control-input:focus ~ .custom-control-label::before {
         box-shadow: none; /* Black focus outline */
     }
+    .image-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    margin-bottom: 10px; /* Add space between image and other elements */
+}
+
+.img-fluid {
+    max-width: 60%; /* Ensure the image doesn't exceed its container's width */
+    max-height: 140px; /* Adjust the maximum height as needed */
+    width: auto; /* Maintain aspect ratio */
+    height: auto; /* Maintain aspect ratio */
+}
   </style>
 </head>
 <body>
   <div class="login-container">
+    <div class="image-container">
+        <img src="./assets/img/login.png" alt="Login Image" class="img-fluid" />
+    </div>
     <h5 class="mb-3 text-center">Sign in with credentials</h5><hr>
         <input type="text" placeholder="Username" id="userInp" class="form-control mb-3">
         <input type="password" placeholder="Password" id="passInp" class="form-control mb-3">
