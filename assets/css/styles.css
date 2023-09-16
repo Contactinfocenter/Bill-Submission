@@ -31,22 +31,67 @@ input[type="date"] {
     margin-right: 10px;
 }
 
-/* Change the focus border color of input fields to blue */
-input[type="text"]:focus,
-input[type="date"]:focus,
-select:focus,
-textarea:focus {
-    border-color: blue !important;
-    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25) !important;
+/* Custom CSS to change the focus and active colors to black */
+.form-control:focus,
+.form-control:active {
+    border-color: #000 !important; /* Black border color on focus and active states */
+    box-shadow: none !important; /* Remove the default box-shadow */
 }
 
-/* Change the active border color of input fields to green */
-input[type="text"]:active,
-input[type="date"]:active,
-select:active,
-textarea:active {
-    border-color: green !important;
-    /* You can also add other styles like box-shadow if desired */
+
+/* Custom CSS to increase the width of the navbar */
+.navbar-nav .nav-link {
+    font-size: 18px; /* Adjust the font size as needed */
+    }
+.navbar-nav .nav-link.no-hover:hover {
+    color: #fff !important; /* Use the default text color on hover */
+    text-decoration: none !important; /* Remove the underline on hover */
 }
+.navbar-nav .nav-link:hover {
+    color: #F0E68C !important; /* Red color on hover with !important */
+    text-decoration: underline; /* Underline the text on hover */
+    text-underline-offset: 4px; /* Adjust the space between text and underline */
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    height: 60px; /* Adjust the height as needed */
+    margin: 0 auto; /* Center the navbar horizontally */
+}
+    /* Add CSS to make the table header fixed */
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px; /* Adjust this value as needed */
+    }
+    th, td {
+        padding: 8px;
+        text-align: center;
+    }
+    th {
+        position: sticky;
+        top: 40px; /* Height of the navbar + margin-top */
+        background-color: #f2f2f2;
+    }
+    thead th {
+        position: -webkit-sticky; /* For Safari */
+        z-index: 2;
+    }
+    th.hidden,
+    td.hidden {
+        display: none;
+    }
+    thead th {
+    background-color:#808080; /* Change this color to your desired background color */
+    color: #fff; /* Change this color to your desired text color */
+    padding: 8px;
+    text-align: center;
+}
+
+
+
 
 
