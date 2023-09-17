@@ -51,60 +51,43 @@
     </nav>
 <br><br>
 
-<!-- Content -->
+    <!-- Content -->
 
-<div class="container mt-5">
-    <h4 class="text-center">Your submited bill details</h4>
-    <hr>
-    <div class="row">
-        <div class="col-md-4">
-            <!-- Month Filter -->
-            <div class="form-group">
-                <label for="filter-month">Select Month:</label>
-                <select id="filter-month" class="form-control">
-                    <option value="">All Months</option>
-                    <!-- Month options will be populated dynamically -->
-                </select>
-            </div>
+    <div class="container mt-5">
+        <h4 class="text-center">Your submitted bill details</h4>
+        <hr>
+        <div class="row">
+            <!-- ... (your existing filter elements) ... -->
         </div>
-        <div class="col-md-4">
-            <!-- Purpose Filter -->
-            <div class="form-group">
-                <label for="filter-purpose">Select Purpose:</label>
-                <select id="filter-purpose" class="form-control">
-                    <option value="">All Purposes</option>
-                    <option value="2:00 PM to 11 PM">Evening</option>
-                    <option value="Remote">Remote</option>
-                </select>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <!-- Apply Filters Button -->
-            <div class="form-group">
-                <label for="apply-filters" class="invisible">Apply Filters:</label>
-                <button id="apply-filters" class="btn btn-primary btn-block">Apply Filters</button>
+
+        <table class="table table-sm" id="data-table">
+            <thead>
+                <tr>
+                    <th>Username</th>
+                    <th>Month</th>
+                    <th>Date</th>
+                    <th>Purpose</th>
+                    <th>From</th>
+                    <th>To</th>
+                    <th>Mode of Transport</th>
+                    <th>Amount in Taka</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Table data will be populated here -->
+            </tbody>
+        </table>
+
+        <!-- Total Amount Row -->
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label for="total-amount">Total Amount:</label>
+                    <span id="total-amount">Calculating...</span>
+                </div>
             </div>
         </div>
     </div>
-
-    <table class="table table-sm" id="data-table">
-        <thead>
-            <tr>
-                <th>Username</th>
-                <th>Month</th>
-                <th>Date</th>
-                <th>Purpose</th>
-                <th>From</th>
-                <th>To</th>
-                <th>Mode of Transport</th>
-                <th>Amount in Taka</th>
-            </tr>
-        </thead>
-        <tbody>
-            <!-- Table data will be populated here -->
-        </tbody>
-    </table>
-</div>
 
 <!-- Include JavaScript -->
 <script src="assets/js/jquery.slim.min.js"></script>
