@@ -82,6 +82,9 @@ function RegisterUser() {
           alert("User added successfully");
           // Reset the form
           document.getElementById('registrationForm').reset();
+          
+          // Redirect to the login page after successful registration
+          window.location.href = 'login.html'; // Replace 'login.html' with your login page URL
         })
         .catch((error) => {
           alert("Error: " + error);
